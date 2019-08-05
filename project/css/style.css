@@ -1,0 +1,442 @@
+/* Web Fonts -------------------- */
+
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header{
+  text-align: center;
+}
+
+h1,
+h2,
+header a {
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+  color: #51708E;
+  margin-top: 50px;
+}
+
+header h1 {
+  font-size: 8rem; /* 90px/16px  */
+  color: rgba(255, 255, 255, 1);
+  text-transform: none;
+  font-weight: normal;
+  line-height: 1.3;
+  text-shadow: 0 1px 1px rgba(0,0,0,.8);
+  margin: 150px auto;
+  transition: all 0.5s;
+}
+
+
+header h1:hover{
+  transform:scale(1.1);
+}
+h2 {
+  font-size: 3.3125em; /* 53px/16px  */
+  font-weight: normal;
+  line-height: 1.1;
+  margin: .5em 0 .5em; /* 0 0 26px */
+}
+
+h3 {
+  font-size: 1.25em; /* 20px/16px  */
+  color: #48525c;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px */
+  margin-top: 0.5em;
+}
+
+form h3{
+  margin: .5em;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+ul,
+ol {
+  margin: 30px 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+nav {
+  text-align:center;
+  display: block;
+  padding: 10px 0 20px;
+  height: 110px;
+  max-height: 120px;
+  margin-top: 0;
+  background: linear-gradient(180deg, #fff, transparent 30%);
+}
+
+nav ul {
+  margin: 40px 0 0;
+}
+
+nav li{
+  list-style-type: none;
+  display: inline-block;
+  text-transform: uppercase;
+  text-shadow: 3px 3px #A0CDEA;
+}
+
+nav a {
+  text-decoration: none;
+  color:#364172;
+  font-size: 3em;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin:0 40px 0;
+}
+
+nav a:hover{
+  font-weight: bold;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  transition: all 1.2s;
+}
+
+#logo:hover{
+  transform: rotate(180deg);
+}
+
+/* Pseudo-classes ------------------ */
+header a:link {
+  color: white;
+}
+
+header a:visited {
+  color: white;
+}
+h2 a:link,
+h3 a:link {
+  color: #51708E;
+}
+h2 a:visited,
+h3 a:visited {
+  color: #51708E;
+}
+.image{
+  text-align: center;
+  margin-top: 60px;
+}
+a:link {
+  color: #A0CDEA;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #A0CDEA;
+}
+
+a:hover {
+  /* color: rgba(255, 169, 73, .4); */
+}
+
+a:active {
+  color: lightcoral;
+}
+
+/* Main Styles --------------------- */
+.main-header {
+  padding-top: 0px;
+  height: 850px;
+}
+.home{
+  background: linear-gradient(0deg, #fff, transparent 10%),
+              linear-gradient(90deg, #fff, transparent 1.5%),
+              linear-gradient(270deg, #fff, transparent 1.5%),
+              url('../img/snow-background.jpg') no-repeat center;
+  background-size: cover;
+}
+.micromouse{
+  background: linear-gradient(0deg, #fff, transparent 10%),
+              linear-gradient(90deg, #fff, transparent 1.5%),
+              linear-gradient(270deg, #fff, transparent 1.5%),
+              url('../img/micromouse.jpg') no-repeat center;
+  background-size: cover;
+}
+.facial{
+  background: linear-gradient(0deg, #fff, transparent 10%),
+              linear-gradient(90deg, #fff, transparent 1.5%),
+              linear-gradient(270deg, #fff, transparent 1.5%),
+              url('../img/facial.jpg') no-repeat center;
+  background-size: cover;
+}
+.AMC{
+  background: linear-gradient(0deg, #fff, transparent 10%),
+              linear-gradient(90deg, #fff, transparent 1.5%),
+              linear-gradient(270deg, #fff, transparent 1.5%),
+              url('../img/AMC.jpg') no-repeat center;
+  background-size: cover;
+}
+.supreme{
+  background: linear-gradient(0deg, #fff, transparent 10%),
+              linear-gradient(90deg, #fff, transparent 1.5%),
+              linear-gradient(270deg, #fff, transparent 1.5%),
+              url('../img/supreme.jpg') no-repeat center;
+  background-size: cover;
+}
+.neural{
+  background: linear-gradient(0deg, #fff, transparent 10%),
+              linear-gradient(90deg, #fff, transparent 1.5%),
+              linear-gradient(270deg, #fff, transparent 1.5%),
+              url('../img/neural.jpg') no-repeat center;
+  background-size: cover;
+}
+.boba{
+  background: linear-gradient(0deg, #fff, transparent 10%),
+              linear-gradient(90deg, #fff, transparent 1.5%),
+              linear-gradient(270deg, #fff, transparent 1.5%),
+              url('../img/boba.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.title {
+  font-size: 1.625rem; /* 26px/16px */
+  letter-spacing: .065em;
+  font-weight: 200;
+  text-align: left;
+  text-transform: lowercase;
+  border-bottom: 2px solid;
+}
+
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6;
+  color:white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.primary-content {
+	padding-top: 50px;
+  padding-bottom: 0px;
+  border-bottom: 5px solid #A0CDEA;
+  background: linear-gradient(180deg, #A0CDEA, transparent 90%);
+  border-radius:20px 20px 0 0;
+}
+
+.secondary-content {
+	padding-top: 80px;
+	padding-bottom: 70px;
+  border-bottom: 5px solid #A0CDEA;
+}
+
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.Hardware p{
+  border-bottom: 3px solid #A0CDEA;
+}
+/* Layout Styles ------------------ */
+
+.primary-content,
+.secondary-content {
+  width: 75%;
+  padding: 0 50px 20px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.about {
+  color: white;
+  text-align: left;
+  padding: 18% 15%;
+  margin: 50px 0 60px;
+  background: tomato;
+  background: url('../img/jin.jpg') no-repeat center;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: inset 0 0 50px 10px rgba(0,0,0, .8);
+}
+
+.arrow {
+  width: 160px;
+  margin-top: 80px;
+  transition: all 0.5s;
+}
+
+.arrow:hover{
+  transform: scale(1.2);
+}
+
+/* Floated Columns ------------------ */
+.left{
+  float:left;
+}
+.right li,
+.left li{
+  list-style-type: none;
+}
+.left,
+.right{
+  width: 47%;
+  border-bottom: 3px solid #A0CDEA;
+  padding: 45px 0 20px;
+}
+
+.left img,
+.right img{
+  transition: all 0.5s;
+}
+.left img:hover,
+.right img:hover{
+  transform: scale(1.02);
+}
+.right{
+  float:right;
+}
+.left-indent{
+  text-align: left;
+}
+.nav-card,
+.last-card{
+  border-bottom: 0px;
+}
+.afterhour-card{
+  padding:20px 0 0;
+  border-bottom: 0px;
+}
+/* Float Clearfix ------------------ */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* footer style------------------ */
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 0;
+  margin: 20px 0 0;
+}
+
+footer .copyright {
+  top: 8px;
+  margin-right: 20px;
+  font-size: .75em;
+  color: #364172;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  transition: 0.25s;
+}
+
+footer li:hover{
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* social link Styles */
+.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: 0.7;
+  transition: all .25s;
+}
+
+.social:hover {
+  opacity: 1;
+}
+
+.twitter {
+  background-image: url("../img/twitter.jpg");
+  border-radius: 15px;
+}
+
+.linkedin {
+  background-image: url("../img/linkedin.jpg");
+  border-radius: 15px;
+}
+
+.github {
+  background-image: url("../img/github.jpg");
+  border-radius: 15px;
+}
+
+.instagram {
+  background-image: url("../img/instagram.jpg");
+  border-radius: 15px;
+}
+
+/* FORM STYLE */
+input[type="submit"]{
+  background: white;
+  border: none;
+  color: #51708E;
+  border-radius: 10px;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top:20px;
+}
+
+input[type="submit"]:hover{
+  transform: scale(1.1);
+}
+
+form>h3{
+  color: #51708E;
+}
+form>input,
+textarea{
+  background-color: #A0CDEA;
+  border:none;
+  border-radius: 5px;
+  opacity: 0.3;
+}
+
+form>input:hover,
+textarea:hover{
+  opacity: 1;
+}

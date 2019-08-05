@@ -2,39 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Jin's Website</title>
+    <title>Jin Wu-Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
   </head>
-  <body background="background">
+  <body>
     <div>
-      <div class="main-nav">
-          <ul class="nav">
-            <li><a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></li>
-            <li><a href="Experience.html">Experience</a></li>
-            <li><a href="Project.html">Project</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="Collection.html">Collection</a></li>
-          </ul>
-      </div>
-      <header>
-        <main class="flex">
-          <div class="contact">
-            <h1>Contact Me:</h1>
+      <header class="main-header group">
+          <a href="index.html" class="left">
+            <img src="images/logo.png" alt="Logo" id="logo">
+          </a>
+          <ul class="right">
+          <li><a href="Project.html">Work</a></li>
+          <!-- <li>
+            <span class="dropdown">
+              <a class="dropbtn" href="Project.html">Project</a>
+              <div class="dropdown-content">
+                <a href="#micromouse">MicroMouse</a>
+                <a href="#facebook">AMC Messenger Bot</a>
+                <a href="#facial">Facial Recognition</a>
+                <a href="#neural">Neural Transfer</a>
+                <a href="#boba">Automated Boba Dispenser</a>
+                <a href="#supreme">Supreme Bot</a>
+                <a href="#webpage">Web Design</a>
+              </div>
+            </span>
+          </li> -->
+          <!-- <li><a href="Project.html">Project</a></li> -->
+          <li><a href="Collection.html">AfterHour</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </header>
+      <main>
+          <div>
+            <h1><a class= "link" href="mailto:jinwu0408@gmail.com">Contact Me:</a></h1>
             <form>
-              <h2>
-                First name:
-              </h2>
+              <h2>First name:</h2>
                 <input type="text" name="firstname">
-              <h2>
-                Last name:
-              </h2>
+              <h2>Last name:</h2>
                 <input type="text" name="lastname">
-              <h2>
-                Email:
-              </h2>
-              <input type="text" name="email">
+              <h2>Email:</h2>
+                <input type="text" name="email">
             </form>
             <form>
               <h2>
@@ -44,8 +53,8 @@
             </form>
             <input type="submit">
           </div>
-        </main>
-      </header>
+        </header>
+      </main>
       <footer>
         <ul>
           <li><a href="https://twitter.com/jinwu0408" class="social twitter">Twitter</a></li>
